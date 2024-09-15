@@ -1,6 +1,8 @@
 package com.example.landmarkbookkotlin
 
-public class Landmark(val name : String , val country : String,val image: Int) {
+import java.io.Serializable
+
+public class Landmark(val name : String , val country : String,val image: Int) : Serializable {
 
 
 }

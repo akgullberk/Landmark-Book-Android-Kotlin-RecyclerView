@@ -23,6 +23,15 @@ class DetailsActivity : AppCompatActivity() {
             insets
         }
 
+        val adapterdenGelenIntent = intent
+
+        val secilenLandmark = adapterdenGelenIntent.getSerializableExtra("landmark") as Landmark
+
+        binding.imageView.setImageResource(secilenLandmark.image)
+        binding.nameText.text = (secilenLandmark.name)
+        binding.countryText.text =(secilenLandmark.country)
+
+
 
     }
 }
