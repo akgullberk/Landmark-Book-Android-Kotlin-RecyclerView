@@ -25,11 +25,17 @@ class DetailsActivity : AppCompatActivity() {
 
         val adapterdenGelenIntent = intent
 
-        val secilenLandmark = adapterdenGelenIntent.getSerializableExtra("landmark") as Landmark
+        //val secilenLandmark = adapterdenGelenIntent.getSerializableExtra("landmark") as Landmark
 
-        binding.imageView.setImageResource(secilenLandmark.image)
-        binding.nameText.text = (secilenLandmark.name)
-        binding.countryText.text =(secilenLandmark.country)
+        val secilenLandmark = MySingleton.chosenLandmark
+
+        secilenLandmark?.let {
+            binding.imageView.setImageResource(it.image)
+            binding.nameText.text = (it.name)
+            binding.countryText.text =(it.country)
+        }
+
+
 
 
 
