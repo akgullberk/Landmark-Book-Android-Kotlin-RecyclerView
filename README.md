@@ -1,5 +1,3 @@
-https://medium.com/@berkak_gul51/landmark-book-android-kotlin-4f2928910a6f
-
 # LandmarkBook Kotlin
 
 # Description
